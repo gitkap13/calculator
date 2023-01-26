@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 500px;
+  height: 600px;
+  padding: 50px;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 450px;
+  height: 100px;
+  background-color: green;
+}
+.screen > div {
+    display: flex;
+    align-items: flex-end;
+    height: 33%;
+    width: auto;
+}
+
+.buttons {
+  display: flex;
+  width: 450px;
+  height: 400px;
+  flex-direction: column;
+  background-color: lightgrey;
+  margin: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.numbers {
+  width: 120px;
+  height: 75px;
+}
+.zero {
+  width: 240px;
+  height: 75px;
+}
+.operators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: fit-content;
+  height: auto;
+}
+.operators > button, .clearButton {
+  width: 50px;
+  height: 30px;
+  margin: 10px;
+}
